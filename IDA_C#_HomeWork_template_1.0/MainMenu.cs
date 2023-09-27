@@ -9,14 +9,14 @@ namespace MainMenu
     internal class MainMenu
     {
         List<string>? _menu_elements = new List<string>()
-            { "HomeWork 01 : [C sharp intro]",
-              "Task_1: FizzBuzz",
-              "Task_2: Percentage",
-              "Task_3: 4_Digits_to_Number",
-              "Task_4: Change digits in 6-digits number",
-              "Task_5: Date view transform",
-              "Task_6: Temprature view transform: F/C",
-              "Task_7: Even numbers in range"
+            { "HomeWork 01 : [work_name]",
+              "Task_1: ",
+              "Task_2: ",
+              "Task_3: ",
+              "Task_4: ",
+              "Task_5: ",
+              "Task_6: ",
+              "Task_7: "
             };
 
         public void AddElement(string menu_element) { _menu_elements.Add(menu_element); }
