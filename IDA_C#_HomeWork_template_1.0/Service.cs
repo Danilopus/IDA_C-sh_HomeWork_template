@@ -82,7 +82,7 @@ namespace Service
 
             return Get_Int(lower_bound, upper_bound, comment);
         }
-        public static double? Get_Double(double lower_bound = Int32.MinValue, double upper_bound = Int32.MaxValue, string comment = "")
+        public static double Get_Double(double lower_bound = Double.MinValue, double upper_bound = Double.MaxValue, string comment = "")
         {
             string? a = Console.ReadLine();
 
@@ -180,12 +180,56 @@ namespace Service
             string tmp_str_2 = tmp_str.Insert(index_to_change_1, tmp_char.ToString()).Remove(index_to_change_2 + 1, 1);
             return tmp_str_2;
         }
-
         public static void swap(ref int num_1, ref int num_2)
         {
             int tmp = num_1;
             num_1 = num_2;
             num_2 = tmp;
+        }
+        public static void swap(ref double num_1, ref double num_2)
+        {
+            double tmp = num_1;
+            num_1 = num_2;
+            num_2 = tmp;
+        }
+
+        public static double Get_Random(double upper_bound = Double.MaxValue, double lower_bound = 0)
+        {
+            Random rand_obj = new();
+            if (lower_bound > upper_bound) swap(ref lower_bound, ref upper_bound);
+            return (rand_obj.NextDouble() * (upper_bound - lower_bound) + lower_bound);
+        }
+        public static double Get_Random()
+        {
+            Random rand_obj = new();
+            return (rand_obj.NextDouble() - 0.5) * Double.MaxValue;
+        }
+        public static void Array_Fill_Random(ref double[,] matrix, double upper_bound = Double.MaxValue, double lower_bound = 0)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int ii = 0; ii < matrix.GetLength(1); ii++)
+                    matrix[i, ii] = ServiceFunction.Get_Random(upper_bound, lower_bound);
+            }
+        }
+        public static void Array_Fill_Random(ref double[,] matrix, Int64 upper_bound = Int64.MaxValue, double lower_bound = 0)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int ii = 0; ii < matrix.GetLength(1); ii++)
+                    matrix[i, ii] = Convert.ToInt64(ServiceFunction.Get_Random(upper_bound, lower_bound));
+            }
+        }
+        public static void Array_Console_Out(double[,] matrix)
+        {
+            // как вывести в консоль имя переменной-массива?
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int ii = 0; ii < matrix.GetLength(1); ii++)
+                    Console.Write((matrix[i, ii] + " | ").ToString().PadLeft(10));
+                Console.Write("\b\b \n");
+            }
+
         }
 
 
