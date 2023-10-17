@@ -1,4 +1,4 @@
-﻿// HomeWork template 1.4 // date: 29.09.2023
+﻿// HomeWork template 1.4 // date: 17.10.2023
 
 using System;
 using System.Linq.Expressions;
