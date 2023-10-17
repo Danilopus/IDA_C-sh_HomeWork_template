@@ -8,7 +8,7 @@ using Service;
 /// QUESTIONS ///
 /// 1. 
 
-// HomeWork XX : [work_name] --------------------------------
+// HomeWork XX : [{work_name}] --------------------------------
 
 namespace IDA_C_sh_HomeWork
 {
@@ -31,31 +31,25 @@ namespace IDA_C_sh_HomeWork
 
         public static void Task_1(string work_name)
         /* Задание */
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_2(string work_name)
         /* Задание */
-
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_3(string work_name)
         /* Задание */
-
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_4(string work_name)
         /* Задание */
-
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_5(string work_name)
         /* Задание */
-
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_6(string work_name)
         /* Задание */
-
-        { }       
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
         public static void Task_7(string work_name)
         /* Задание */
-
-        { }
+        { Console.WriteLine("\n***\t{0}\n\n", work_name); }
 
     }// class Program
 }// namespace

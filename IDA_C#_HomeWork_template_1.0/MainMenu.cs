@@ -9,7 +9,7 @@ namespace MainMenu
     internal class MainMenu
     {
         List<string>? _menu_elements = new List<string>()
-            { "HomeWork 01 : [work_name]",
+            { "HomeWork XX : [{work_name}]",
               "Task_1: ",
               "Task_2: ",
               "Task_3: ",
